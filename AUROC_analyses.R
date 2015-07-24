@@ -5,8 +5,10 @@
 # 2)Compute CI of AUROC curves, and test if differences in AUROCs are significant
 library(pROC)
 library(ggplot2)
+
 multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL, row_height=NULL, col_width=NULL) {
   require(grid)
+  #plot multiple graphs on a grid
   
   # Make a list from the ... arguments and plotlist
   plots <- c(list(...), plotlist)
